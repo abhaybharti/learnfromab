@@ -3,10 +3,10 @@ sidebar_position: 1
 ---
 
 # String-CheckNullOrEmpty
-
 ## Code to check if a String is null as well as "" value
 
-- `Solution 1 : using import org.apache.commons.lang3.StringUtils`
+
+- `import org.apache.commons.lang3.StringUtils`
 
 This code checks a string for null as well "" value:
 
@@ -22,15 +22,3 @@ public static void main(String args[]){
     }
 ```
 
-- `This solution works fine if String has "", will throw error if str = null. `
-
-- `Solution 2 : Using str.isEmpty() method`
-
-```
- public static void main(String[] args)
-    {
-        String str = "";
-
-        System.out.println(str == null || str.isEmpty());    // true
-    }
-```

@@ -6,7 +6,8 @@ sidebar_position: 1
 ## Code to check if a String is null as well as "" value
 
 
-- `import org.apache.commons.lang3.StringUtils`
+
+- `Solutionimport org.apache.commons.lang3.StringUtils`
 
 This code checks a string for null as well "" value:
 
@@ -21,4 +22,13 @@ public static void main(String args[]){
         }
     }
 ```
+- `This solution works fine if String has "", will throw error if str = null. `
 
+```
+ public static void main(String[] args)
+    {
+        String str = "";
+ 
+        System.out.println(str == null || str.isEmpty());    // true
+    }
+```
