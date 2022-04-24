@@ -38,6 +38,24 @@ const config = {
         },
       }),
     ],
+    [
+      "@docusaurus/preset-classic",
+      {
+        googleAnalytics: {
+          trackingID: "UA-26863691-1",
+          anonymizeIP: true,
+        },
+      },
+    ],
+    [
+      "@docusaurus/preset-classic",
+      {
+        sitemap: {
+          changefreq: "weekly",
+          priority: 0.5,
+        },
+      },
+    ],
   ],
 
   themeConfig:
