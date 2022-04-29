@@ -2,11 +2,29 @@
 sidebar_position: 1
 ---
 
-# Array -> Filter() method
+# Array method()
 
-## variable scope->Understanding
+## Mutating Array methods
 
-Filter() method creates a new array from existing array with elements that pass a test provided by a function. It does not execute the function for empty elements. It method does not change the original array.
+Mutating array methods are one who mutate (Mutation is basically changing the array itself instead of returning a new array with the new changes) the original array right away, when executed.
+
+It helps in following -
+
+- `Avoid accidentally mutating : ` The original array should not be mutated right away
+- `Do Easier mind map : `
+- `These mutating methods need to be executed first`
+
+#### Mutating Array Methods list
+
+- .copywithin()
+- .splice()
+- .fill()
+- .pop()
+- .push()
+- .reverse()
+- .sort()
+- .unshift()
+- .shift()
 
 ```
 //How to filter below array which has 'world' in it
