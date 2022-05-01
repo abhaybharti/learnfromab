@@ -25,7 +25,14 @@ function getMarkRange(grade) {
   return `range is ${range}`;
 }
 console.log(getMarkRange("B"));
+```
 
+`Output :`
+40-69
+
+#### We can use an "Object Lookup Map" instead of a "switch" statement for a cleaner syntax. Above switch statement re-written in Object Lookup map format.
+
+```
 /*
  function to getMarkRange() using Object literal
 */
@@ -41,3 +48,6 @@ function getMarkRangeWithObjectLiteral(grade) {
 console.log(getMarkRange("B"));
 
 ```
+
+`Output :`
+40-69

@@ -6,6 +6,8 @@ sidebar_position: 1
 
 ### Enable listener & Start capturing Network traffic
 
+Selenium 4 provides WebDriver BiDi api which makes it easy to capture network events (Network Interceptions), listen to JS exceptions .
+
 ```
 //Create chrome driver object
 ChromeDriver chromeDriver = New ChromeDriver();
