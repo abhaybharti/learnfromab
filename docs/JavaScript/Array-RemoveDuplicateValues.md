@@ -2,8 +2,6 @@
 sidebar_position: 1
 ---
 
-# Array
-
 ### Array -> Remove Duplicate Values
 
 ```

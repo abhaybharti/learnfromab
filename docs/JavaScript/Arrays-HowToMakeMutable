@@ -1,0 +1,20 @@
+---
+sidebar_position: 1
+---
+
+# ArraysMutable
+
+## How to make arrays mutable
+
+```
+const kidsName = ["Govind","Gopal","Pari","Kanhu","Aayu"]
+
+Object.freeze(kidsName) //Make it immutable, user can not edit/update values & add new element in array
+
+//If you try to add/update value of array, will throw TypeError
+kidsName.push("Lal");
+kidsName[1] ="AB"
+```
+
+`Output :`
+`TypeError: Cannot add property 5, object is not extensible at Array.push (<anonymous>) at Object.<anonymous> (/home/runner/2wq0fv6bhic/index.js:6:10) at Module._compile (internal/modules/cjs/loader.js:999:30)`
