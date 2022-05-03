@@ -16,8 +16,9 @@ console.log(unique)
 
 ```
 
-`Output`
-[ 'a', 'b', 'c', 'd', 'e', 'f' ]
+`Output :`
+
+- [ 'a', 'b', 'c', 'd', 'e', 'f' ]
 
 #### remove duplicate Using Array reduce() method
 
@@ -28,8 +29,9 @@ const unique = letters.reduce((result,letter)=>{
 console.log(unique)
 ```
 
-`Output`
-[ 'a', 'b', 'c', 'd', 'e', 'f' ]
+`Output :`
+
+- [ 'a', 'b', 'c', 'd', 'e', 'f' ]
 
 #### remove duplicate Using Array filter() method
 
@@ -40,5 +42,6 @@ const unique = letters.filter((letter,index)=>{
 console.log(unique)
 ```
 
-`Output`
-[ 'a', 'b', 'c', 'd', 'e', 'f' ]
+`Output :`
+
+- [ 'a', 'b', 'c', 'd', 'e', 'f' ]
