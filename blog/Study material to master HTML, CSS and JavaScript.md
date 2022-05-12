@@ -18,3 +18,5 @@ Study material to master #html, #css and #js
 - Practice frontend challenges : https://bigfrontend.dev/
 
 - All in one doc: https://lnkd.in/gJMBUea4
+
+- Tool to build & test responsive website : https://responsively.app/

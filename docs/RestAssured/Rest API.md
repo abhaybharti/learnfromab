@@ -7,6 +7,7 @@ sidebar_position: 1
 ### REST Stands for Representational State Transfer
 
 It works on simple Request/Response system.
+An API is an Application Programming Interface. It is a set of rules that allow programs to talk to each other. The Developer creates the API on the server and allows the client to talk to it. It is a set of programming code that enables data transmission between one software product and another. It also contains the terms of this data exchange.
 
 | Request                                                                                                                 | Response                                                                          |
 | ----------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------- |
@@ -71,6 +72,20 @@ Client and Server can pass extra bit of information with the request and respons
 - **`PUT : `** The PUT method is used whenever you need to change the resource. The resource which is already a part of resource collection.
 - **`PATCH : `** The Patch request method is used to modify only the necessary part of the data or response. It does not modify the entire response
 - **`DELETE : `** Delete request is used to delete the specified resource. It request that origin server delete the resource identified by the request URL.
+
+### How to test APIs
+
+One need to understand what that respective API does, test validation of the input fields while making a request and verify that you are getting the expected data in the response. One can also check the data integrity between the APIs by creating contracts between APIs.
+
+For Example - if user deletes something using the Delete API, you can test by fetching the same record using GET API and expect that no records are returned in the response.
+
+### Types of API
+
+- **Public API** - Available to any third party developers. APIs are publicly available to developers and user with minimal restriction. They may require registration, use of an API key or OAUTH or maybe completely open.
+
+- **Partner API** - APIs exposed by/to strategic business partners. They are not available publicly and need specific entitlement to access them.
+
+- **Private API** - APIs are hidden from external users and only exposed by internal systems. These are not meant for consumption outside of the company but rather for use across different internal development teams for reuse of services.
 
 ### Further Reading
 

@@ -16,7 +16,7 @@ It helps in following -
 
 #### Mutating Array Methods list
 
-- .copywithin()
+- `.copywithin() : ` use this to copy elements from within the array. It then replaces the pre-existing elements accordingly.
 - .splice()
 - .fill()
 - .pop()

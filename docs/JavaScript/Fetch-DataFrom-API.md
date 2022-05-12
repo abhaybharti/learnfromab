@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# Loops in JavaScript
+# Fetch Data from API
 
 ## Different ways to fetch data from API
 
