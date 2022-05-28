@@ -84,12 +84,12 @@ if (response.getResponse().getStatus() != 200 && !(Arrays.asList(skipThisListOfX
 
 `Disable Network Capture`
 
-````
+```
 public void disableNetworkTrafficCapture() {
     devTool.send(new Command<>("Network.disable", ImmutableMap.of()));
     devTool.send(Performance.disable());
     devTool.getDomains().events().disable();
     System.out.println("Network traffic capture is disabled");
 }
- ```
-````
+
+```
