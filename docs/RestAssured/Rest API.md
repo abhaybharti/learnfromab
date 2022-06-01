@@ -91,3 +91,46 @@ For Example - if user deletes something using the Delete API, you can test by fe
 
 - **Access Control HTTP Header**
 - **Caching in API Calls**
+
+### End point: Address where API is hosted on the Server.
+
+### How to send input data in GET?
+
+Ans: Using Query Parameters
+
+### How to send input data in POST?
+
+Ans: Using Form Parameters /Body Payload
+
+### Resources:
+
+Resources represent API/Collection which can be accessed from the Server. Example :
+
+Google.com/maps
+google.com/search
+google.com/images
+
+### Path Parameters:
+
+Path parameters are variable parts of a URL path. They are typically used to point to a specific resource within a collection, such as a user identified by ID
+
+https://www.google.com/Images/1123343
+https://www.google.com/docs/1123343
+https://amazon.com/orders/112
+
+https://www.google.com/search?q=newyork&oq=newyork&aqs=chrome..69i57j0l7.2501j0j7&sourceid=chrome&ie=UTF-8
+
+### Query Parameters:
+
+Query Parameter is used to sort/filter the resources. Query Parameters are identified with "?"
+
+https://amazon.com/orders?sort_by=2/20/2020
+
+### Headers/Cookies:
+
+Headers represent the meta-data associated with the API request and response. In layman terms, we were sending Additional details to API to process our request.
+Example : Authorization details
+
+### End Point Request URL can be constructed as below
+
+Base URL/resource/(Query/Path)Parameters
