@@ -1,3 +1,7 @@
+---
+sidebar_position: 1
+---
+
 API Testing Approach is a predefined strategy or a method that the QA team will perform in order to conduct the API testing after the build is ready. This testing does not include the source code. The API testing approach helps to better understand the functionalities, testing techniques, input parameters and the execution of test cases.
 Following points helps the user to do API Testing approach:
 
