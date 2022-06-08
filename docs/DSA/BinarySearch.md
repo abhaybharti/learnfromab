@@ -69,7 +69,7 @@ Binary search algorithm can be implemented in two ways
 
 - The space complexity of the binary search is `O(1)`
 
-  `Exercise`
+### Exercise
 
 - Suppose you have a sorted list of 128 names and you are searching it using binary search. What's the maximum number of step it would take
 - Suppose you doubled the size of the list. What's the maximum number of steps now?
