@@ -80,11 +80,6 @@ const config = {
             label: "Notes",
           },
           { to: "/blog", label: "Blog", position: "left" },
-          {
-            href: "https://github.com/facebook/docusaurus",
-            label: "GitHub",
-            position: "right",
-          },
         ],
       },
       footer: {
@@ -123,10 +118,6 @@ const config = {
                 id: "T",
                 label: "Blog",
                 to: "/blog",
-              },
-              {
-                label: "GitHub",
-                href: "https://github.com/facebook/docusaurus",
               },
             ],
           },
