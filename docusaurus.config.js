@@ -102,12 +102,12 @@ const config = {
                 href: "https://stackoverflow.com/questions/tagged/docusaurus",
               },
               {
-                label: "Discord",
-                href: "https://discordapp.com/invite/docusaurus",
+                label: "Linkedin",
+                href: "https://www.linkedin.com/in/abhaybharti/",
               },
               {
                 label: "Twitter",
-                href: "https://twitter.com/docusaurus",
+                href: "https://twitter.com/abhaybharti",
               },
             ],
           },

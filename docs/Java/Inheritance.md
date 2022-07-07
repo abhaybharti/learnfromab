@@ -67,5 +67,3 @@ It is HAS-A/HAS-AN relationship between two classes.
 - Relationship cannot be changed at run time
 
 ### How can we use inheritance in a test automation framework
-
-https://www.blog.dtesthive.in/2022/07/oops-concept-in-test-automation-design.html

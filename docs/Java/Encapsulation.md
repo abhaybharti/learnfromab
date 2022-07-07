@@ -6,7 +6,7 @@ sidebar_position: 1
 
 ## what is encapsulation
 
-- `TO Write`
+It is a process of binding data and methods that can control the data together into a single unit (class). The designer of the unit (class) can decide what kind of access it may allow to the outsiders and how that can be achieved.
 
 ### why it is needed
 
@@ -19,3 +19,9 @@ Instead, if we have declared as private variables, then in the setter method we 
 The same gets applied for getter methods. You have the control to return a default value if some variable is null or not in the desired state.
 
 Basics: Methods bring better control than variables.
+
+### How Encapsulation is different from Abstraction
+
+### How to implement Encapsulation
+
+### How to use Encapsulation in a test automation framework
