@@ -15,3 +15,9 @@ for i in {1..100}; do echo -n "restarting docker $i "; date ; docker restart xxx
   xxx1
   xxx2
   restarting docker 2 Wed Jul 6 10:01:11 EDT 2022
+
+  ## Delete Directory
+
+  `rm -rf xxx_ABC`
+
+  - to delete directory **xxx_ABC** with contents

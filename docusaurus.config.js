@@ -95,12 +95,8 @@ const config = {
             ],
           },
           {
-            title: "Community",
+            title: "Connect Me",
             items: [
-              {
-                label: "Stack Overflow",
-                href: "https://stackoverflow.com/questions/tagged/docusaurus",
-              },
               {
                 label: "Linkedin",
                 href: "https://www.linkedin.com/in/abhaybharti/",
@@ -122,7 +118,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Notes, Inc. Built by AB.`,
       },
       prism: {
         theme: lightCodeTheme,
