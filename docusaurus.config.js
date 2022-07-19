@@ -1,21 +1,114 @@
-// @ts-check
-// Note: type annotations allow type checking and IDEs autocompletion
-
+const math = require("remark-math");
+const katex = require("rehype-katex");
 const lightCodeTheme = require("prism-react-renderer/themes/github");
 const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
-/** @type {import('@docusaurus/types').Config} */
-const config = {
-  title: "AB Notes",
-  tagline: "Dinosaurs are cool",
+const internetProfiles = {
+  linkedin: {
+    label: "LinkedIn",
+    href: "https://www.linkedin.com/in/abhaybharti/",
+  },
+  github: {
+    label: "GitHub",
+    href: "https://github.com/abhaybharti",
+  },
+  email: {
+    label: "Email",
+    href: "mailto:abhaybharti@gmail.com",
+  },
+  blog: {
+    label: "Blog",
+    to: "blog",
+  },
+  docs: {
+    label: "Documentation",
+    to: "docs",
+  },
+  projects: {
+    label: "Projects",
+    to: "projects",
+  },
+  about: {
+    label: "About",
+    to: "about",
+  },
+
+  resume: {
+    label: "Resume",
+    href: "https://www.linkedin.com/in/abhaybharti/overlay/1635492497824/single-media-viewer/",
+  },
+};
+
+module.exports = {
+  title: "Abhay Bharti",
+  tagline:
+    "I am a Software Engineer and Cloud Engineer passionate about solving Meaningful Problems.",
   url: "https://your-docusaurus-test-site.com",
   baseUrl: "/",
   onBrokenLinks: "throw",
-  onBrokenMarkdownLinks: "warn",
-  favicon: "img/favicon.ico",
-  organizationName: "facebook", // Usually your GitHub org/user name.
-  projectName: "docusaurus", // Usually your repo name.
-
+  favicon: "img/logo.png",
+  organizationName: "",
+  projectName: "Abhay-folio",
+  themeConfig: {
+    colorMode: {
+      defaultMode: "dark",
+      disableSwitch: true,
+      respectPrefersColorScheme: false,
+    },
+    navbar: {
+      hideOnScroll: true,
+      title: "Abhay Bharti",
+      logo: {
+        alt: "Abhay Bharti",
+        src: "img/logo.png",
+        target: "_self",
+      },
+      items: [
+        { to: "blog/", label: "Blog", position: "left" },
+        {
+          type: "doc",
+          docId: "intro",
+          position: "left",
+          label: "Notes",
+        },
+        { to: "projects/", label: "Projects", position: "left" },
+        { to: "about/", label: "Support Me", position: "left" },
+        {
+          href: "https://www.linkedin.com/in/abhaybharti/overlay/1635492497824/single-media-viewer/",
+          label: "Resume",
+          position: "left",
+        },
+      ],
+    },
+    footer: {
+      links: [
+        {
+          title: "Connect",
+          items: [
+            internetProfiles.linkedin,
+            internetProfiles.github,
+            internetProfiles.email,
+          ],
+        },
+        {
+          title: "Discover",
+          items: [
+            internetProfiles.blog,
+            internetProfiles.docs,
+            internetProfiles.projects,
+            internetProfiles.about,
+            internetProfiles.resume,
+          ],
+        },
+      ],
+      // I built this website for my own personal use, but you are free to use it so long as you credit me. You can do so by linking back to evantay.com :)
+      copyright: `<a href="https://evantay.com">Design by Abhay Bharti</a> • <a href="https://github.com/abhaybharti">Updated ${new Date().toLocaleDateString()}</a>`,
+    },
+    prism: {
+      theme: lightCodeTheme,
+      darkTheme: darkCodeTheme,
+    },
+  },
   plugins: [
     [
       require.resolve("@cmfcmf/docusaurus-search-local"),
@@ -24,108 +117,35 @@ const config = {
       },
     ],
   ],
-
   presets: [
     [
-      "classic",
-      /** @type {import('@docusaurus/preset-classic').Options} */
-      ({
+      "@docusaurus/preset-classic",
+      {
         docs: {
           sidebarPath: require.resolve("./sidebars.js"),
-          // Please change this to your repo.
-          editUrl: "https://github.com/abhaybharti/learnfromab/",
+          disableVersioning: false,
+          editCurrentVersion: false,
+          remarkPlugins: [math],
+          rehypePlugins: [katex],
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
-          editUrl: "https://github.com/abhaybharti/learnfromab/",
+          editUrl: "https://github.com/DigiPie/kaya-folio/tree/main/website/",
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
         },
-      }),
+      },
     ],
-    // [
-    //   "@docusaurus/preset-classic",
-    //   {
-    //     googleAnalytics: {
-    //       id: "googleAnalytics",
-    //       trackingID: "UA-26863691-1",
-    //       anonymizeIP: true,
-    //     },
-    //     sitemap: {
-    //       id: "sitemap",
-    //       changefreq: "weekly",
-    //       priority: 0.5,
-    //     },
-    //   },
-    // ],
   ],
-
-  themeConfig:
-    /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
-    ({
-      id: "T",
-      navbar: {
-        title: "Portfolio",
-        logo: {
-          alt: "Portfolio",
-          src: "img/logo.svg",
-        },
-        items: [
-          {
-            type: "doc",
-            docId: "intro",
-            position: "left",
-            label: "Notes",
-          },
-          { to: "/blog", label: "Blog", position: "left" },
-          { to: "hireme/", label: "hireme", position: "right" },
-        ],
-      },
-      footer: {
-        style: "dark",
-        links: [
-          {
-            title: "Docs",
-            items: [
-              {
-                label: "Tutorial",
-                to: "/docs/intro",
-              },
-            ],
-          },
-          {
-            title: "Connect Me",
-            items: [
-              {
-                label: "Linkedin",
-                href: "https://www.linkedin.com/in/abhaybharti/",
-              },
-              {
-                label: "Twitter",
-                href: "https://twitter.com/abhaybharti",
-              },
-            ],
-          },
-          {
-            title: "More",
-            items: [
-              {
-                id: "T",
-                label: "Blog",
-                to: "/blog",
-              },
-            ],
-          },
-        ],
-        copyright: `Copyright © ${new Date().getFullYear()} Notes, Inc. Built by AB.`,
-      },
-      prism: {
-        theme: lightCodeTheme,
-        darkTheme: darkCodeTheme,
-      },
-    }),
+  stylesheets: [
+    {
+      href: "https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css",
+      type: "text/css",
+      integrity:
+        "sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X",
+      crossorigin: "anonymous",
+    },
+  ],
 };
-
-module.exports = config;
