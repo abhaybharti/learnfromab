@@ -80,12 +80,7 @@ const config = {
             label: "Notes",
           },
           { to: "/blog", label: "Blog", position: "left" },
-          {
-            type: "doc",
-            docId: "intro",
-            position: "left",
-            label: "Hire Me",
-          },
+          { to: "hireme/", label: "hireme", position: "right" },
         ],
       },
       footer: {

@@ -90,7 +90,26 @@ info AppiumDoctor Bye! Run appium-doctor again when all manual fixes have been a
 info AppiumDoctor
 ```
 
-#### Launching app using Appium
+#### Connecting to Real devices
+
+- Connect the device through the UDB cable to the desktop machine (can be connected through bluetooth or Wifi)
+- Enable the developer options in the mobile
+- Open settings app in the mobile
+- Select system a About phone
+- Scroll to the bottom and tap build number 7 times
+- Returns to the previous screen to find the **developer options** near the bottom
+- Scroll down and enable debugging
+- Accept the popup in mobile
+- Type **adb devices** in the cmd
+- You should see an entry of a device with udid mentioned
+
+#### How to find appPackage and appActivity
+
+- adb devices -> Should list device name
+- Open the application in the app to find appPack and appAct
+- If the application is not installed, adb install apkPath/apkfilename.apk
+
+#### Launching mobile app using Appium
 
 We can launch app in two ways
 
@@ -125,24 +144,29 @@ Note - MobileCapabilityType is common for Android and iOS platform
 
 - `appPackage and appActivity --> app`
 
-#### Connecting to Real devices
+#### Launching Chrome Browser using Appium
 
-- Connect the device through the UDB cable to the desktop machine (can be connected through bluetooth or Wifi)
-- Enable the developer options in the mobile
-- Open settings app in the mobile
-- Select system a About phone
-- Scroll to the bottom and tap build number 7 times
-- Returns to the previous screen to find the **developer options** near the bottom
-- Scroll down and enable debugging
-- Accept the popup in mobile
-- Type **adb devices** in the cmd
-- You should see an entry of a device with udid mentioned
+```
+  @Test
+  public void chromeBrowserOnAndroid() throws MalformedURLException {
+    DesiredCapabilities capabilities = new DesiredCapabilities();
+    capabilities.setCapability(MobileCapabilityType.PLATFORM_NAME,"Android");
+    capabilities.setCapability(AndroidMobileCapabilityType.BROWSER_NAME,"Chrome");
+    capabilities.setCapability(MobileCapabilityType.AUTOMATION_NAME,"uiautomator2");
+    capabilities.setCapability(MobileCapabilityType.UDID,"ZD2222Q329");
 
-#### How to find appPackage and appActivity
+    WebDriver driver = new RemoteWebDriver(new URL("http://127.0.0.1:4723/wd/hub"),capabilities);
+    driver.get("http://www.goolge.com");
+  }
+```
 
-- adb devices -> Should list device name
-- Open the application in the app to find appPack and appAct
-- If the application is not installed, adb install apkPath/apkfilename.apk
+`TBD` - This code is throwing error
+
+`ERROR`
+
+1. WARNING: Support for Legacy Capabilities is deprecated; You are sending the following invalid capabilities: [automationName, udid];
+
+2. org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: No Chromedriver found that can automate Chrome '103.0.5060'
 
 #### Driver CLI commands
 
