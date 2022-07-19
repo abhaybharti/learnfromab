@@ -22,6 +22,20 @@ visit appium.io website for docs & other detail about Appium
 
 #### Appium 2.0 Architecture
 
+#### How to install Android Studio
+
+- Download Android Studio from internet and install on your local machine
+- Once Android Studio is installed, open Android Studio, open AVD Manager (It shows existing emulator or option to create new simulator)
+
+#### Configure SDK Tools
+
+1. Go to path - C:\Users\xxxxx\AppData\Local\Android\Sdk
+2. Add ANDROID_HOME = C:\Users\xxxxx\AppData\Local\Android\Sdk in environment variable
+3. Add following 3 paths in **PATH** variable
+   a. C:\Users\xxxxx\AppData\Local\Android\Sdk\tools
+   b. C:\Users\xxxxx\AppData\Local\Android\Sdk\tools\bin
+   c. C:\Users\xxxxx\AppData\Local\Android\Sdk\platform-tools
+
 #### Installing Appium 2.0 Server
 
 - npm install -g appium@next
@@ -29,6 +43,52 @@ visit appium.io website for docs & other detail about Appium
 - appium driver install uiautomator2
 - appium driver list – see list of Appium driver available
 - appium driver list –installed – see all installed Appium driver
+
+#### Verify Dependencies are installed with Appium Doctor
+
+- npm install -g appium-doctor : Appium doctor is a CLI that provides insights on what dependencies are missing as well as how to install them.
+- appium-doctor -–android : For only android
+- appium-doctor -–ios :For only ios
+
+If I run it at this point in time, it intelligently warns me about the required dependencies that are installed, optional dependencies that could be installed, and how to go about installing them.
+
+```
+C:\Users\xxxxx>appium-doctor --android
+info AppiumDoctor Appium Doctor v.1.16.0
+info AppiumDoctor ### Diagnostic for necessary dependencies starting ###
+info AppiumDoctor  ✔ The Node.js binary was found at: C:\Program Files\nodejs\node.EXE
+info AppiumDoctor  ✔ Node version is 14.18.1
+info AppiumDoctor  ✔ ANDROID_HOME is set to: C:\Users\xxxxx\AppData\Local\Android\Sdk
+info AppiumDoctor  ✔ JAVA_HOME is set to: C:\Program Files\Microsoft\jdk-16.0.2.7-hotspot
+info AppiumDoctor    Checking adb, android, emulator
+info AppiumDoctor      'adb' is in C:\Users\xxxxx\AppData\Local\Android\Sdk\platform-tools\adb.exe
+info AppiumDoctor      'android' is in C:\Users\xxxxx\AppData\Local\Android\Sdk\tools\android.bat
+info AppiumDoctor      'emulator' is in C:\Users\xxxxx\AppData\Local\Android\Sdk\emulator\emulator.exe
+info AppiumDoctor  ✔ adb, android, emulator exist: C:\Users\xxxxx\AppData\Local\Android\Sdk
+info AppiumDoctor  ✔ 'bin' subfolder exists under 'C:\Program Files\Microsoft\jdk-16.0.2.7-hotspot'
+info AppiumDoctor ### Diagnostic for necessary dependencies completed, no fix needed. ###
+info AppiumDoctor
+info AppiumDoctor ### Diagnostic for optional dependencies starting ###
+WARN AppiumDoctor  ✖ opencv4nodejs cannot be found.
+WARN AppiumDoctor  ✖ ffmpeg cannot be found
+WARN AppiumDoctor  ✖ mjpeg-consumer cannot be found.
+WARN AppiumDoctor  ✖ bundletool.jar cannot be found
+WARN AppiumDoctor  ✖ gst-launch-1.0.exe and/or gst-inspect-1.0.exe cannot be found
+info AppiumDoctor ### Diagnostic for optional dependencies completed, 5 fixes possible. ###
+info AppiumDoctor
+info AppiumDoctor ### Optional Manual Fixes ###
+info AppiumDoctor The configuration can install optionally. Please do the following manually:
+WARN AppiumDoctor  ➜ Why opencv4nodejs is needed and how to install it: https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/image-comparison.md
+WARN AppiumDoctor  ➜ ffmpeg is needed to record screen features. Please read https://www.ffmpeg.org/ to install it
+WARN AppiumDoctor  ➜ mjpeg-consumer module is required to use MJPEG-over-HTTP features. Please install it with 'npm i -g mjpeg-consumer'.
+WARN AppiumDoctor  ➜ bundletool.jar is used to handle Android App Bundle. Please read http://appium.io/docs/en/writing-running-appium/android/android-appbundle/ to install it. Also consider adding the ".jar" extension into your PATHEXT environment variable in order to fix the problem for Windows
+WARN AppiumDoctor  ➜ gst-launch-1.0.exe and gst-inspect-1.0.exe are used to stream the screen of the device under test. Please read https://appium.io/docs/en/writing-running-appium/android/android-screen-streaming/ to install them and for more details
+info AppiumDoctor
+info AppiumDoctor ###
+info AppiumDoctor
+info AppiumDoctor Bye! Run appium-doctor again when all manual fixes have been applied!
+info AppiumDoctor
+```
 
 #### Launching app using Appium
 

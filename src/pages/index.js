@@ -5,6 +5,7 @@ import Link from "@docusaurus/Link";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import styles from "./index.module.css";
 import HomepageFeatures from "@site/src/components/HomepageFeatures";
+import HomePage from "./Homepage";
 
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
@@ -17,9 +18,7 @@ function HomepageHeader() {
           <Link
             className="button button--secondary button--lg"
             to="/docs/intro"
-          >
-            Docusaurus Tutorial - 5min ⏱️
-          </Link>
+          ></Link>
         </div>
       </div>
     </header>
@@ -33,9 +32,8 @@ export default function Home() {
       title={`Hello from ${siteConfig.title}`}
       description="Description will go into a meta tag in <head />"
     >
-      <HomepageHeader />
       <main>
-        <HomepageFeatures />
+        <HomePage />
       </main>
     </Layout>
   );

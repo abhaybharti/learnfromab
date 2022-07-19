@@ -11,3 +11,5 @@ In the interview, if you are asked to ask questions, we should ask interviewer a
 - What is the % of automation and manual stuff they had and also the testing tools and framework they use
 - About the work culture
 - About Learning and Growth Opportunities
+
+Profile link for freelancing work - https://wasiqbhamla.hashnode.dev/test-automation-freelancing
