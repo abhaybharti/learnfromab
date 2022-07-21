@@ -45,14 +45,14 @@ module.exports = {
     "I am a Software Engineer and Cloud Engineer passionate about solving Meaningful Problems.",
   url: "https://your-docusaurus-test-site.com",
   baseUrl: "/",
-  onBrokenLinks: "throw",
+  onBrokenLinks: "ignore",
   favicon: "img/logo.png",
   organizationName: "",
   projectName: "Abhay-folio",
   themeConfig: {
     colorMode: {
-      defaultMode: "dark",
-      disableSwitch: true,
+      defaultMode: "light",
+      disableSwitch: false,
       respectPrefersColorScheme: false,
     },
     navbar: {
@@ -94,7 +94,6 @@ module.exports = {
           title: "Discover",
           items: [
             internetProfiles.blog,
-            internetProfiles.docs,
             internetProfiles.projects,
             internetProfiles.about,
             internetProfiles.resume,
@@ -122,16 +121,17 @@ module.exports = {
       "@docusaurus/preset-classic",
       {
         docs: {
-          sidebarPath: require.resolve("./sidebars.js"),
-          disableVersioning: false,
-          editCurrentVersion: false,
-          remarkPlugins: [math],
-          rehypePlugins: [katex],
+          // sidebarPath: require.resolve("./sidebars.js"),
+          // disableVersioning: false,
+          // editCurrentVersion: false,
+          editUrl: "https://github.com/abhaybharti/learnfromab/",
+          // remarkPlugins: [math],
+          // rehypePlugins: [katex],
         },
         blog: {
-          showReadingTime: true,
+          //showReadingTime: true,
           // Please change this to your repo.
-          editUrl: "https://github.com/DigiPie/kaya-folio/tree/main/website/",
+          editUrl: "https://github.com/abhaybharti/learnfromab/",
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
