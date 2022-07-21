@@ -103,8 +103,8 @@ module.exports = {
           ],
         },
       ],
-      // I built this website for my own personal use, but you are free to use it so long as you credit me. You can do so by linking back to evantay.com :)
-      copyright: `<a href="https://evantay.com">Design by Abhay Bharti</a> • <a href="https://github.com/abhaybharti">Updated ${new Date().toLocaleDateString()}</a>`,
+
+      copyright: `<a href="https://abhaybharti.github.io/">Design by Abhay Bharti</a> • <a href="https://github.com/abhaybharti">Updated ${new Date().toLocaleDateString()}</a>`,
     },
     prism: {
       theme: lightCodeTheme,
