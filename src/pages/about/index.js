@@ -59,7 +59,6 @@ function About() {
               projects I am working on by visiting my{" "}
               <a href="https://github.com/abhaybharti/">GitHub profile</a>.
             </p>
-           
           </div>
         </div>
         <section className={styles.directory}>
@@ -78,7 +77,7 @@ function About() {
               <div className="pagination-nav__item pagination-nav__item--next">
                 <a
                   className="pagination-nav__link"
-                  href={useBaseUrl("pdf/resume.pdf")}
+                  href={useBaseUrl("pdf/Abhay_Bharti-SDET_15_Years.pdf")}
                 >
                   <div className="pagination-nav__sublabel">Download</div>
                   <div className="pagination-nav__label">My resume</div>
