@@ -75,7 +75,7 @@ module.exports = {
           label: "Notes",
         },
         { to: "projects/", label: "Projects", position: "left" },
-        { to: "about/", label: "Support Me", position: "left" },
+        { to: "about/", label: "About", position: "left" },
         {
           href: "https://github.com/abhaybharti/learnfromab/blob/main/static/pdf/Abhay_Bharti-SDET_15_Years.pdf",
           label: "Resume",
