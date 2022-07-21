@@ -43,8 +43,11 @@ module.exports = {
   title: "Abhay Bharti",
   tagline:
     "I am a Software Engineer and Cloud Engineer passionate about solving Meaningful Problems.",
-  url: "https://your-docusaurus-test-site.com",
+  url: "https://abhaybharti.github.io/",
   baseUrl: "/",
+  projectName: "abhaybharti.github.io",
+  organizationName: "abhaybharti",
+  trailingSlash: false,
   onBrokenLinks: "ignore",
   favicon: "img/logo.png",
   organizationName: "",
