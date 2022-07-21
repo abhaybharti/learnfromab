@@ -35,7 +35,7 @@ const internetProfiles = {
 
   resume: {
     label: "Resume",
-    href: "https://www.linkedin.com/in/abhaybharti/overlay/1635492497824/single-media-viewer/",
+    href: "https://github.com/abhaybharti/learnfromab/blob/main/static/pdf/Abhay_Bharti-SDET_15_Years.pdf",
   },
 };
 
@@ -77,7 +77,7 @@ module.exports = {
         { to: "projects/", label: "Projects", position: "left" },
         { to: "about/", label: "Support Me", position: "left" },
         {
-          href: "https://www.linkedin.com/in/abhaybharti/overlay/1635492497824/single-media-viewer/",
+          href: "https://github.com/abhaybharti/learnfromab/blob/main/static/pdf/Abhay_Bharti-SDET_15_Years.pdf",
           label: "Resume",
           position: "left",
         },
