@@ -2,10 +2,6 @@
 sidebar_position: 1
 ---
 
----
-
-## sidebar_position: 1
-
 # Docker-Commands
 
 ### How to Clear Log Files of A Docker Container
